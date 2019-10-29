@@ -3733,7 +3733,7 @@ Function Export-ADRCSV
 
     Try
     {
-        $ADRObj | Export-Csv -Path $ADFileName -NoTypeInformation
+        $ADRObj | Export-Csv -Path $ADFileName -NoTypeInformation -Encoding UTF8
     }
     Catch
     {
